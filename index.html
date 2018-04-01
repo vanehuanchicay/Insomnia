@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<!-- navbar -->
+	<!--
+	<nav class="navbar navbar-default navbar-movie">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand logo" href="#">
+         <img src="assets/img/logo-01.png" class="icon_owl" alt="">
+        </a>
+			</div>
+			<div class="col-md-8 text-center">
+				<img src="assets/img/search-01.png" class="search_icon" alt="">
+				<input type="text" class="form-control" id="movie" placeholder="Buscar Películas...">
+			</div>
+			<div class="col-md-2 text-center">
+					<li class="dropdown">
+							<a href="#" class="dropdown-toggle cat" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorías
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Acción</a>
+								</li>
+								<li>
+									<a href="#">Comedia</a>
+								</li>
+								<li>
+									<a href="#">Romance</a>
+								</li>
+								<li>
+									<a href="#">Fantasia</a>
+								</li>
+								<li>
+									<a href="#">Aventura</a>
+								</li>
+								<li>
+									<a href="#">Adultos</a>
+								</li>
+								<li>
+									<a href="#">Kids</a>
+								</li>
+							</ul>
+						</li>
+
+			</div>
+			<div class="col-md-2 text-center">
+					<button id="film_logo" class="film_logo">
+							<img  src="assets/img/film-01.png" alt=""></img>
+						</button>	
+			</div>
+			
+		</div>		 
+	</nav>
+-->
+<!--
+<nav class="navbar navbar-default navbar-movie">
+		<div class="container-fluid">
+				<div class="navbar-header">
+						<a class="navbar-brand logo" href="#">
+						 <img src="assets/img/logo-01.png" class="icon_owl" alt="">
+						</a>
+					</div>
+			Collect the nav links, forms, and other content for toggling 
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 navbar-left">
+					<form id="searchForm" class="navbar-form navbar-left left-nav">
+						<img src="assets/img/search-01.png" class="search_icon" alt="">
+						<input type="text" class="form-control" id="movie" size="35" placeholder="Buscar Películas..">
+					</form>
+				<ul class="nav navbar-nav navbar-left  left-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle cat" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Acción</a>
+							</li>
+							<li>
+								<a href="#">Comedia</a>
+							</li>
+							<li>
+								<a href="#">Romance</a>
+							</li>
+							<li>
+								<a href="#">Fantasia</a>
+							</li>
+							<li>
+								<a href="#">Aventura</a>
+							</li>
+							<li>
+								<a href="#">Adultos</a>
+							</li>
+							<li>
+								<a href="#">Kids</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<button id="film_logo" class="film_logo">
+							<img  src="assets/img/film-01.png" alt=""></img>
+						</button>
+					</li>
+					<li class="user">
+						<a href="#">
+							<i class="fas fa-user fa-2x"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+-->
+<nav class="navbar navbar-default navbar-movie">
+	<div class="row">
+		<div class="col-lg-2">
+				<div class="navbar-header">
+					<a class="navbar-brand logo" href="#">
+						<img src="assets/img/logo-01.png" class="icon_owl" alt="">
+					</a>
+				</div>
+		</div>
+		<div class="col-lg-4">
+			<form id="searchForm" class="navbar-form navbar-left left-nav">
+				<img src="assets/img/search-01.png" class="search_icon" alt="">
+				<input type="text" class="form-control" id="movie" size="35" placeholder="Buscar Películas..">
+			</form>
+		</div>
+		<div class="col-lg-2">
+			<ul class="nav navbar-nav navbar-left  left-nav">
+				<li class="dropdown">
+							<a href="#" class="dropdown-toggle cat" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Acción</a>
+								</li>
+								<li>
+									<a href="#">Comedia</a>
+								</li>
+								<li>
+									<a href="#">Romance</a>
+								</li>
+								<li>
+									<a href="#">Fantasia</a>
+								</li>
+								<li>
+									<a href="#">Aventura</a>
+								</li>
+								<li>
+									<a href="#">Adultos</a>
+								</li>
+								<li>
+									<a href="#">Kids</a>
+								</li>
+							</ul>
+		</div>
+		<div class="col-lg-2">
+			<button id="film_logo" class="film_logo">
+				<img  src="assets/img/film-01.png" alt=""></img>
+			</button>
+		</div>
+		<div class="col-lg-2">
+			<li class="user">
+				<a href="#">
+					<i class="fas fa-user fa-2x"></i>
+				</a>
+			</li>
+		</div>
+	</div>
+</nav>
+<!-- PELICULAS API -->
+<div class="container api">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-4 col-sm-4">
+				<div class="preview"></div>
+			</div>
+			<div class="col-lg-7 col-md-12 col-xs-4 col-sm-4 description">
+				<p id="title"></p>
+				<p id="plot"></p>
+				<p id="genre"></p>
+				<p id="year"></p>
+				<p id="director"></p>
+				<p id="runtime"></p>
+				<p id="rating"></p>
+			</div>	
+			<div class="col-lg-5 col-md-12 col-xs-4 col-sm-4 photo">
+				<div id="img"></div>
+				<div id="btn_imdb"></div>
+			</div>
+    </div>
+  </div>
+	
+	<!-- ESTRENOS-->
+  <section class="premiere">
+			<div class="container">
+				 <div id="movies" class="row cont_api">
+				 </div>
+			</div>
+			<div class="container default-movies">
+			 <div class="row">
+				<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+				 <h2 class="title-movie">ESTRENOS</h2>
+				</div>
+			 </div>
+			 <div class="row estrenos">
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a href="#" class="thumbnail">
+					<img src="assets/img/poster star wars2.jpg" alt="" class="img-responsive img-poster-2">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4  class="thumbnail"">
+				 <a class="thumbnail">
+					<img src="assets/img/1estreno.jpg" alt="" class="img-responsive img-poster">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/2estreno.jpg" alt="" class="img-responsive img-poster">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/8estreno.jpg" alt="" class="img-responsive img-poster">
+				 </a>
+				</div>
+			 </div>
+			 <div class="row estrenos">
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/4estreno.jpg" alt="" class="img-responsive img-poster">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a  class="thumbnail">
+					<img src="assets/img/9.jpg" alt="" class="img-responsive img-poster">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a  class="thumbnail">
+					<img src="assets/img/6estreno.jpg" alt="" class="img-responsive img-poster">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/7estreno.jpg" alt="" class="img-responsive img-poster">
+				 </a>
+				</div>
+			 </div>
+			</div>
+		 </section>
+
+	<!-- SUGERENCIAS PARA TI-->
+	<section class="suggestion">
+			<div class="container ">
+			 <div class="row">
+				<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+				 <h2 class="title-movie">SUGERENCIAS PARA TI</h2>
+				</div>
+			 </div>
+			 <div class="row sugerencias">
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a  class="thumbnail">
+					<img src="assets/img/poster star wars.jpg"  alt="" class="img-responsive img-poster">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a  class="thumbnail">
+					<img src="assets/img/1.jpg" alt="" class="img-responsive img-poster 1">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/2.jpg" alt="" class="img-responsive img-poster 2">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a  class="thumbnail">
+					<img src="assets/img/3.jpg" alt="" class="img-responsive img-poster 3">
+				 </a>
+				</div>
+			 </div>
+			 <div class="row sugerencias">
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/4.jpg" alt="" class="img-responsive img-poster 4">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/5.jpg" alt="" class="img-responsive img-poster 5">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/6.jpg" alt="" class="img-responsive img-poster 6">
+				 </a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
+				 <a class="thumbnail">
+					<img src="assets/img/7.jpg" alt="" class="img-responsive img-poster 7">
+				 </a>
+				</div>
+			 </div>
+			</div>
+		 </section>
+		 <!--INFO PELICULA STAR WARS -->
+		 <section class="movie-details hidden" id="star-wars">
+			<div class="container-fluid">
+			 <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				 <h2>Star Wars: El despertar de la fuerza</h2>
+				</div>
+			 </div>
+			 <div class="row">
+				<div class="col-lg-5 col-md-5 col-xs-12 col-sm-12">
+				 <p class="description-movie">Tres décadas después de la derrota del Imperio Galáctico, una nueva amenaza surge. La Primera Orden intenta gobernar la galaxia y solamente un grupo de héroes pueden detenerla: Rey, una recolectora del planeta desolado Jakku, un stormtrooper rebelde y un poco de ayuda de La Resistencia.</p>
+				 <button type="button" class="btn btn-default play" aria-label="Left Align" data-toggle="modal" data-target="#myModalmovie">
+					 <span class="glyphicon glyphicon-play" aria-hidden="true" ></span>
+				 </button>
+				 <!-- desplegar modal con trailer -->
+				 <button type="button" class="btn btn-default trailer" aria-label="Left Align" data-toggle="modal" data-target="#myModaltrailer">
+					 <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+				 </button>
+				 <button type="button" class="btn btn-default op1" aria-label="Left Align" onclick="window.location.href='http://www.imdb.com/'" target="_blank">imdb</button>
+				 <button type="button" class="btn btn-default op2" aria-label="Left Align" onclick="window.location.href='https://www.filmaffinity.com/es/main.php'" target="_blank">filmaffinity</button>
+				</div>
+			 </div>
+			 <div class="container carrusel_film2">
+				 <div class="row">
+					 <div class="col-md-12 col-lg-12">
+						 <div id="Carousel" class="carousel slide">
+							
+							 <!-- Carousel items -->
+							 <div class="carousel-inner">
+								 <div class="item active">
+									 <div class="row">
+										 <div class="col-md-3"><a href="#" class="thumbnail episodio1"><img src="assets/img/episodio1.jpg" alt="Image" style="max-width:100%;"></a></div>
+										 <div class="col-md-3"><a href="#" class="thumbnail episodio2"><img src="assets/img/episodio2.jpg" alt="Image" style="max-width:100%;"></a></div>
+										 <div class="col-md-3"><a href="#" class="thumbnail episodio3"><img src="assets/img/episodio3.jpg" alt="Image" style="max-width:100%;"></a></div>
+										 <div class="col-md-3"><a href="#" class="thumbnail rogue-one"><img src="assets/img/rogue-one.jpg" alt="Image" style="max-width:100%;"></a></div>
+									 </div>
+								 </div>
+								 <div class="item">
+									 <div class="row">
+										 <div class="col-md-3"><a href="#" class="thumbnail episodio4"><img src="assets/img/episodio4.jpg" alt="Image" style="max-width:100%;"></a></div> 
+										 <div class="col-md-3"><a href="#" class="thumbnail episodio6"><img src="assets/img/episodio6.jpg" alt="Image" style="max-width:100%;"></a></div>
+										<div class="col-md-3"><a href="#" class="thumbnail episodio7"><img src="assets/img/poster_star_wars_copia.jpg" alt="Image" style="max-width:100%;"></a></div> 
+										 <div class="col-md-3"><a href="#" class="thumbnail episodio5"><img src="assets/img/poster_star_wars2_copia.jpg" alt="Image" style="max-width:100%;"></a></div>
+									 </div>
+								 </div>
+							 </div>
+								 <div col-sm-hidden col-xs-hidden>
+									 <a data-slide="prev" href="#Carousel" class="left carousel-control"><i class="fas fa-angle-left" aria-hidden="true"></i></a>
+									 <a data-slide="next" href="#Carousel" class="right carousel-control"><i class="fas fa-angle-right" aria-hidden="true"></i></a>
+								 </div>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+			</div>
+		 </section>
+
+	<!-- SUBIR FILM-->
+  <section id="indi_movies" class="indi_movies hidden">
+			<div class="container-fluid cont_film">
+			 <div class="row">
+				 <!--div film charge -->
+				 <div class="col-lg-12" id="div_image">
+					 <img src="" id="img" alt=""> 
+				 </div>
+				 <!--fin div film charge -->
+				 <div class="col-lg-12 movie_set">
+					 <img  class="img-responsive" alt="">
+				 </div>
+			 </div>
+		 </div>
+		 <button type="button" class="btn btn-primary btn-lg btn_film" data-toggle="modal" data-target="#modal_film">SUBE TU FILM</button>
+		<!--Modal-->
+	 <div class="modal fade" id="modal_film" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		 <div class="modal-dialog" role="document">
+			 <div class="modal-content">
+				 <div class="modal-header">
+					 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					 <h4 class="modal-title" id="myModalLabel">SUBIR TU FILM</h4>
+				 </div>
+				 <div class="modal-body">
+					 <form>
+						 <div class="form-group">
+							 <label for="recipient-name" class="control-label">Título del Film</label>
+							 <input type="text" class="form-control" id="tittle">
+						 </div>
+						 <div class="form-group">
+							 <label for="message-text" class="control-label">Descripción</label>
+							 <textarea class="form-control" id="descrip"></textarea>
+						 </div>
+						 <div class="form-group">
+							 <label for="message-text" class="control-label">Autor</label>
+							 <textarea class="form-control" id="autor"></textarea>
+						 </div>
+						 <div class="form-group">
+							 <label for="message-text" class="control-label">Film</label>
+							 <span id=fileselector>
+								 <label for="upload-file-selector">
+									 <input id="upload-file-selector" type="file">
+								 </label>
+							 </span>
+						 </div>
+						 </form>
+					 </div>
+					 <div class="modal-footer">
+						 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						 <button type="button" class="btn btn-primary" id="save_btn">SUBIR</button>
+					 </div>
+			 </div>
+		 </div>
+	 </div>
+ 
+		 <!--Galeria Imagenes Peli Indi -->
+		<div class="container carrusel_film">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div id="Carousel-1" class="carousel slide">
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
+								</div><!--.row-->
+							</div><!--.item-->
+							<div class="item">
+								<div class="row">
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
+								</div><!--.row-->
+							</div><!--.item-->
+							<div class="item">
+								<div class="row">
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
+									<div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
+								</div><!--.row-->
+							</div><!--.item-->
+						</div>
+							<div col-sm-hidden col-xs-hidden><!--.carousel-inner-->
+								<a data-slide="prev" href="#Carousel-1" class="left carousel-control"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+								<a data-slide="next" href="#Carousel-1" class="right carousel-control"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+							</div><!--.Carousel-->
+					</div>
+				</div>
+			</div>
+		</div><!--.container-->
+	 </section>
+	 <!-- pantalla usuario (5)-->
+<section id="description-user" class="user-section hidden">
+		<div class="container user-description"> <!-- container -->
+			<div class="row">  <!--init row-->
+				<div class="col-lg-1 col-md-1 pull-right"><!-- init-->
+					<ul class="red-social">
+						<li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+						<hr width="70%;">
+						<a href="" target="_blank">
+							<li class="social-face"></li>
+						</a>
+						<a href="" target="_blank">
+							<li class="social-twtt"></li>
+						</a>
+						<a href="" target="_blank">
+							<li class="social-goo"></li>
+						</a>
+					</ul>
+				</div><!-- finish col-->
+				<div id="margin-icon" class="col-lg-4 col-md-4 col-xs-8 col-sm-8 "> <!-- init col-->
+					<img class="img-circle img-user" id="" src="assets/img/user.png" alt="Responsive image">
+					<ul id="list-user" class="list-user">
+						<li> <button id="list" type="button" name="button" class="list-btn"><i class="fa fa-th-list" aria-hidden="true"></i>  Lista</button> </li>
+						<li> <button type="button" name="button" class="settings-btn"> <i class="fa fa-cog" aria-hidden="true"></i> Ajustes</button> </li>
+					</ul>
+				</div><!-- finish col-->
+				 <div class="col-lg-7 col-md-7 col-xs-8 col-sm-8 pull-right"><!-- init col-->
+					 <ol class="date-user">
+						 <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <b>Name: </b>Jhon Nein Clark.</li>
+						 <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <b>Description: </b>Estudiante de Cine, poseo conocimientos del mundo cinematográfico y la capacidad de levantar proyectos audiovisuales, generados de la experiencia de haber realizado numerosos ejercicios de rodaje a lo largo de la carrera, para culminar con 8 cortometrajes, 1 capítulo de 50 minutos de una serie de ficción televisiva, documentales de investigación, spots y video clips.</li>
+						 <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <b>Tipo de User: </b> Premium.</li>
+					 </ol>
+				 </div><!-- finish col-->
+			 </div><!-- finish row-->
+		 </div> <!--container-->
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

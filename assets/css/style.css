@@ -1,0 +1,321 @@
+body{	
+	background-color: #121924;
+	font-family: Lato;
+}
+.navbar{
+	background-color: #27343d8f;
+	height: 11vh;
+}
+.logo img{
+  width:16vh;
+}
+.icon_owl{
+	margin-top: -1%;
+}
+.search_icon{
+  width: 6vh;
+  margin-top: 4%;
+}
+.form-control{
+	display: block;
+	width: 30%;
+	margin-top:-31%;
+	margin-left: 51%;
+	background-color:white;
+	border: none;
+	color: #FF2D56;
+}
+
+.search_icon{
+	width: 20%;
+	display: block;
+	margin-top: 1.5%;
+	margin-left: 28%;
+}
+.navbar-default{
+  margin:0;
+  border:0;
+}
+.dropdown {
+	width: 100%;
+	margin-top: 8%;
+	margin-left: 37%;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #FF2D56;
+}
+.dropdown a {
+	font-size: 145%;
+	text-decoration: none;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	text-decoration: none;
+	color: #1c9b77;
+}
+.film_logo{
+	background-color: transparent;
+	border:none;
+}
+.film_logo img{
+	width: 42%;
+	margin-top: 1%;
+}
+.film_logo:focus{
+outline: none;
+}
+.user{
+	margin-left: -15%;
+}
+.fa-2x{
+	font-size: 350%;
+	margin-top: 4%;
+	color: #FF2D56;
+}
+.fa-2x:hover{
+	color: #1c9b77;
+}
+.title-movie{
+	text-align: left;
+	color: #FF2D56;
+	padding-bottom: 2%;
+	font-size: 150%;
+}
+img.poster{
+	width: 100%;
+}
+.title_movie_search{
+	display: inline-block;
+	color: white;
+	margin-left: 4%;
+	margin-top: 3%;
+}
+
+.img-thumbnail{
+	background-color:white;
+	border: none;
+	height: 67vh;
+	width: 28%;
+}
+
+.preview p{
+	color: #FF2D56;
+	text-align: center;
+	font-family: Lato;
+	font-weight: 600;
+}
+.img_poster{
+	height: 61vh;
+	width: 100%;
+}
+/*	INFO STAR WARS*/
+
+.movie-details{
+  background-image: url(../../assets/img/fondo-pelicula-star-wars.jpg);
+  background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -5.1%;
+	background-position:50% 107%;
+}
+.description-movie{
+  text-align: justify;
+}
+.btn{
+  border:3px solid  #FF2D56;
+  background-color: transparent;
+}
+.btn:hover{
+  border:3px solid #1c9b77 ;
+  background-color: #1c9b77;
+}
+.carousel{
+	margin-top: 2%;
+}
+.carousel-control {
+  left: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 23px 23px 23px 23px;
+  margin-top: 90px;
+}
+.carousel-control.right , .carousel-control.left {
+  right: -9vh;
+  top: 7vh;
+  background-image: none;
+  color: #FF2D56;
+  font-size: 327%;
+}
+.carousel-control.left{
+  left: -9vh;
+}
+.carousel-control.right:hover , .carousel-control.left:hover{
+  color: #1c9b77;
+}
+.each_photo{
+	margin-top: 9%;
+	padding-bottom: 3%;
+}
+.description{
+	margin-top: 3%;
+	color: white;
+	font-family: Lato;
+
+}
+h5{
+	color: #FF2D56;
+}
+.op2 img{
+	width: 20%;
+	margin-left: 23%;
+}
+/*SUBIR FILMS*/
+.movie_set{
+  background-image: url(../img/movie_set.jpg);
+  background-size: cover;
+  height: 70vh;
+	background-position: 25% 61%;
+	margin-top: -6.6%;
+
+}indi_movies , #setting{
+  display: none;
+}
+.indi_movies{
+  text-align: center;
+}
+.btn_film{
+	position: relative;
+	margin-top: -38%;
+}
+
+/*USER*/
+.user-description{
+  margin:0;
+}
+#config-user{
+  padding-top: 15%;
+  margin-left: 7%;
+  color: white;
+}
+.list-user, ul{
+  list-style: none;
+  padding-left: 0%;
+  margin-left: 30px;
+}
+.list-user li{
+  float: left;
+  margin-left: 18%;
+  /*margin-top: 35%;*/
+}
+.date-user{
+  border: 2px solid #FF2D56;
+  padding: 5%;
+  border-radius: 23px 23px 23px 23px;
+  margin-top: 0%;
+  margin-left: 15%;
+  list-style: none;
+  line-height: 250%;
+  color: white;
+}
+.red-social{    
+  margin-top: 102%;
+  padding-left: 15%;
+  opacity: 0.6;
+  filter: Alpha;
+  background-color: #09131A;
+  border-radius: 23px 23px 23px 23px;
+  /* margin-right: 20px; */
+  margin-left: 20px;
+}
+.btn-red {
+  margin-top: 5%;
+}
+.btns {
+  margin-top: 9%;
+}
+.img-circle{
+	margin-left: 13%;
+	padding-bottom: 13%;
+	border-radius: 43%;
+
+}
+/*boton cambiar imagen*/
+.btn-img {
+  margin-left: 31%;
+  margin-top: 20px;
+}
+.margin-btn {
+  margin-bottom: 30px;
+}
+.btn-margin {
+  margin-top: 9%;
+}
+.fa-share-alt{
+  color: #FF2D56;
+  font-size: 200%;
+  margin-top: 40%;
+}
+.social-face{
+  margin-top: 10%;
+  background-image: url("../img/facebook-logo.png");
+  height: 6vh;
+  background-repeat: no-repeat;
+}
+.social-twtt{
+  cursor: pointer;
+  background-image: url("../img/twitter-logo.png");
+  height: 6vh;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+}
+.social-goo{
+  cursor: pointer;
+  background-image: url("../img/google-logo.png");
+  height: 6vh;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+}
+.fav-list{
+  list-style: none;
+  color: white;
+}
+.btn-color{
+  background: transparent;
+}
+.list-btn{
+  width: 180%;
+  padding: 9%;
+  color: white;
+  font-size: 120%;
+  border-radius: 6px;
+  border:3px solid  #FF2D56;
+  background-color: transparent;
+}
+.list-btn:hover{
+  background: #1c9b77;
+  border:3px solid #1c9b77 ;
+}
+.list-btn:focus, .settings-btn:focus{
+	outline: none;
+}
+.settings-btn{
+  width: 150%;
+  font-size: 120%;
+  padding: 7%;
+  color: white;
+  border-radius: 6px;
+  border:3px solid  #FF2D56;
+  background-color: transparent;
+}
+.settings-btn:hover{
+  background: #1c9b77;
+  border:3px solid #1c9b77 ;
+}
+b{
+  color:#FF2D56;
+}
+.cont_api img{
+  height: 200%;
+}
+
+#movies img, #movie img{
+  width:100%;
+}
